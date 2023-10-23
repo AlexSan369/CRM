@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        body{
+            height: 100vh;
+        }
+        .content{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        .form__content{
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
+        }
+        input{
+            height: 28px;
+            width: 256px;
+        }
+        input::placeholder{
+            text-align: center;
+        }
+        input[type='submit']{
+            min-width: 100px;
+            min-height: 30px;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(13, 70, 7);
+            position: relative;
+            align-self: center;
+        }
+        .esqueci__senha{
+            padding-top: 2rem;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        .logo{display: flex; justify-content: center;}
+        .logo img{
+            width: 150px;
+            height: 150px;
+            border-radius:50%;
+        }
+        input[type='submit'].btn-blue{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header><h1>Login</h1></header>
+        <div class="logo">
+            <img src="cadeado.png" alt="">
+        </div>
+        <div class="form__content">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Senha">
+            <input type="submit" value="Logar">
+            <input type="submit" value="Limpar" class="btn-blue">
+        </div>
+        <div class="esqueci__senha">
+            <a href="esqueci-senha.html">Esqueci minha senha</a>
+        </div>
+    </div>
+</body>
+</html>
